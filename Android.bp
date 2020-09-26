@@ -49,10 +49,8 @@ filegroup {
 
 android_app {
     name: "PermissionController",
-    sdk_version: "system_current",
-    min_sdk_version: "28",
-    updatable: true,
     privileged: true,
+    platform_apis: true,
     certificate: "platform",
 
     srcs: [":permissioncontroller-sources"],
